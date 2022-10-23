@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Need<span>Pass...</span></h1>
+    </div>
+    <div class="main">
+        <h2 id="headPara">
+            <p>Instantly generate a secure,</p>
+            <p> random password with the</p>
+            <p>NeedPass online tool</p>
+        </h2>
+        <div id="outerBox">
+            <div class="pass">
+                <input id="password" value="Need Password">
+                <div class="icon">
+                    <i class="fa-regular fa-clipboard" onClick="copyPass()"></i>
+                    <i class="fa-solid fa-arrows-rotate" onClick="needPass()"></i>
+                </div>
+            </div>
+            <div class="selector">
+                <div id="form">
+                    <div class="selectOpt">
+                        <label for="passLen"> Length </label>
+                        <input name="passLen" type="number" id="totalChar" max="30" min="4" value="9">
+                    </div>
+                    <div class="selectOpt">
+                        <label for="upcase">Uppercase</label>
+                        <input type="checkbox" name="upcase" id="chup" checked>
+                    </div>
+                    <div class="selectOpt">
+                        <label for="lowcase">Lowercase</label>
+                        <input type="checkbox" name="lowcase" id="chlow" checked>
+                    </div>
+                    <div class="selectOpt">
+                        <label for="num">Number</label>
+                        <input type="checkbox" name="num" id="chnum" checked>
+                    </div>
+                    <div class="selectOpt">
+                        <label for="sym">Symbol</label>
+                        <input type="checkbox" name="sym" id="chsym" checked>
+                    </div>
+                    <button id="btn" onClick="needPass()">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/4f4f6e8374.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
